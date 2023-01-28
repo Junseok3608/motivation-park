@@ -18,13 +18,15 @@
     </header>
     <main>
       <!-- 로그인폼 -->
-      <div class="login-form hidden">
-        <input type="text" required maxlength="15" id="" placeholder="이름을 입력하세요" />
-        <input type="submit" value="달려보자구" />
+      <div id="login-form" class="hidden">
+        <form action="">
+          <input type="text" required maxlength="15" id="" placeholder="이름을 입력하세요" />
+          <input type="submit" value="달려보자구" />
+        </form>
       </div>
       <!-- 접속 후 인사 -->
-      <div>
-        <p>동기-Park과 함께 달리는 --님!</p>
+      <div id="greeting-user" class="hidden">
+        <p id="greeting">동기-Park과 함께 달리는 --님!</p>
         <p id="greeting-time">현재 시간은 달리기 좋은 --시 --분</p>
         <p id="geo-temp">--- 오늘의 날씨는 -- 체감온도--도</p>
       </div>
@@ -70,5 +72,6 @@
     <!-- Scripts -->
     <script src="js/clock.js"></script>
     <script src="js/weather.js"></script>
+    <script src="js/greeting.js"></script>
   </body>
 </html>
