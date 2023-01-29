@@ -22,9 +22,9 @@ const paintRun = function (newRun) {
   const li = document.createElement("li");
   li.id = newRun.id;
   const spankm = document.createElement("span");
-  spankm.innerText = `오늘의 목표! ${newRun.textkm}km`;
+  spankm.innerText = `목표: ${newRun.textkm}km를`;
   const spantime = document.createElement("span");
-  spantime.innerText = `Time Limit! ${newRun.texttime}`;
+  spantime.innerText = ` ${newRun.texttime}시간 안에!`;
   const btn = document.createElement("button");
   btn.innerHTML = `☑`;
   btn.addEventListener("click", deleteRun);

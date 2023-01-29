@@ -25,9 +25,9 @@ header {
 main {
   width: 75%;
   max-width: 920px;
-
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
   margin: 10px 0px;
 }
 
@@ -75,36 +75,102 @@ main {
 }
 .quote-and-img {
   background-color: var(--bg-color);
-  width: 100%;
+  width: 50%;
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
 #bg-img {
   opacity: 0.4;
+  width: 100%;
 }
 #bg-img img {
   border-radius: 15px;
+  width: 100%;
 }
 .quote {
   position: absolute;
   font-size: 150%;
-  width: 45%;
+  width: 30%;
   display: flex;
   flex-direction: column;
 }
 #running-form {
-  width: 100%;
-  height: 20%;
+  width: 25%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   background-color: var(--bg-color);
+  justify-content: flex-start;
+  border-bottom-left-radius: 15px;
+  padding: 10px 5px;
+}
+#running-input__km,
+#running-input__time {
+  width: 50%;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+#running-form input:last-child {
+  border: none;
+  padding: 5px 5px;
+  width: 30%;
+  font-size: 1.5vw;
+  margin-bottom: 15px;
+}
+.running-list,
+.todo-list {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: scroll;
+}
+.running-list::-webkit-scrollbar,
+.todo-list::-webkit-scrollbar {
+  display: none;
+}
+.running-list li,
+.todo-list li {
+  font-size: 1.5vw;
+}
+.running-list li button,
+.todo-list li button {
+  border-radius: 50%;
+  border: none;
+  background: none;
+  color: greenyellow;
+  cursor: pointer;
 }
 #todo-form {
-  width: 100%;
-  height: 20%;
+  width: 25%;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   background-color: var(--bg-color);
-  border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
+  padding: 10px 5px;
+  align-items: center;
+}
+#todo-form form {
+  display: flex;
+  flex-direction: column;
+}
+#todo-input {
+  width: 90%;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+#todo-form form input:last-child {
+  margin: 10px;
+  border: none;
+  padding: 5px 5px;
+  width: 40%;
+  font-size: 1.5vw;
+  margin-bottom: 15px;
+  border-radius: 10px;
 }
