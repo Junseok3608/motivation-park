@@ -37,10 +37,9 @@
         <form action="">
           <p>오늘의 달리기 목표를 입력하세요</p>
           <br />
-          <p>목표 거리:</p>
-          <input type="number" id="running-input__km" placeholder="목표 거리" />km
-          <p>목표 시간:</p>
-          <input type="number" id="running-input__time" placeholder="목표시간" />시간
+
+          <input required type="number" id="running-input__km" placeholder="거리(km)" />
+          <input required type="number" id="running-input__time" placeholder="시간(시간)" />
           <input type="submit" value="달려보자!" />
         </form>
         <ul class="running-list"></ul>
@@ -59,7 +58,7 @@
       <div id="todo-form">
         <form action="">
           <p>오늘의 할 일을 입력해보세요</p>
-          <input type="text" id="todo-input" placeholder="할 일 입력" />
+          <input required type="text" id="todo-input" placeholder="할 일 입력" />
           <input type="submit" value="달려보자!" />
         </form>
         <ul class="todo-list"></ul>

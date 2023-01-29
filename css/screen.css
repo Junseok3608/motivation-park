@@ -111,6 +111,7 @@ main {
   border: none;
   border-radius: 5px;
   padding: 5px 10px;
+  margin: 5px;
 }
 #running-form input:last-child {
   border: none;
@@ -155,6 +156,7 @@ main {
   padding: 10px 5px;
   align-items: center;
 }
+#running-form form,
 #todo-form form {
   display: flex;
   flex-direction: column;
@@ -165,6 +167,7 @@ main {
   border-radius: 5px;
   padding: 5px 10px;
 }
+#running-form form input:last-child,
 #todo-form form input:last-child {
   margin: 10px;
   border: none;
@@ -173,6 +176,14 @@ main {
   font-size: 1.5vw;
   margin-bottom: 15px;
   border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  background-image: var(--bg-img);
+}
+#running-form form input:last-child:hover,
+#todo-form form input:last-child:hover {
+  color: #0ba360;
+  background-image: none;
 }
 p,
 span {
