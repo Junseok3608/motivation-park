@@ -3,10 +3,10 @@ body {
   flex-direction: column;
   height: 100vh;
   color: white;
-  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+  background-image: var(--bg-img);
 }
 header {
-  background-color: rgba(128, 128, 128, 0.8);
+  background-color: var(--bg-color);
   max-width: 920px;
   width: 75%;
   height: 10%;
@@ -32,7 +32,7 @@ main {
 }
 
 #login-form {
-  background-color: gray;
+  background-color: var(--bg-color);
   width: 100%;
   height: 8vh;
   max-height: 80px;
@@ -64,7 +64,7 @@ main {
 }
 
 #greeting-user {
-  background-color: gray;
+  background-color: var(--bg-color);
   width: 100%;
   height: 8vh;
   max-height: 80px;
@@ -72,4 +72,39 @@ main {
   flex-direction: column;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+}
+.quote-and-img {
+  background-color: var(--bg-color);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#bg-img {
+  opacity: 0.4;
+}
+#bg-img img {
+  border-radius: 15px;
+}
+.quote {
+  position: absolute;
+  font-size: 150%;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+#running-form {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-color);
+}
+#todo-form {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-color);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }

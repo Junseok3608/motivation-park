@@ -3,6 +3,8 @@
 @import "mobile.css";
 /* 일반 화면 대응 */
 @import "screen.css";
+/* variable */
+@import "variable.css";
 @font-face {
   font-family: nanum;
   src: url(font/NanumPenScript-Regular.ttf);
