@@ -1,7 +1,25 @@
+@import "reset.css";
+/* 모바일 대응 */
+@import "mobile.css";
+/* 일반 화면 대응 */
+@import "screen.css";
+@font-face {
+  font-family: nanum;
+  src: url(font/NanumPenScript-Regular.ttf);
+}
 * {
   margin: 0px;
   padding: 0px;
+  font-family: "nanum";
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
 }
-.hidden {
+body::-webkit-scrollbar {
   display: none;
+}
+
+.hidden {
+  display: none !important;
 }
