@@ -8,9 +8,7 @@ const onGeoPass = function (position) {
 
   fetch(url).then((Response) =>
     Response.json().then((data) => {
-      geoTemp.innerText = `
-    ${data.name}, 오늘의 날씨는 ${data.weather[0].main} 체감온도${data.main.feels_like}도
-    `;
+      geoTemp.innerText = `${data.name}, 오늘의 날씨는 ${data.weather[0].main} 체감온도${data.main.feels_like}도`;
     })
   );
 };
