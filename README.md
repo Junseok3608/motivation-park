@@ -3,7 +3,6 @@
 - 이름: mr.박동기씨(Motivation-park)
 - 배포: 'https://junseok3608.github.io/motivation-park/'
 - 제작후기: 'https://lkfkimschool.tistory.com/202'
-  > 수정 필요2
 
 ---
 
